@@ -53,8 +53,8 @@ window.INVITATION_CONFIG = {
     // Use a valid ISO date with the local UTC offset for an accurate countdown.
     isoDate: "2026-11-25T19:00:00+05:30",
     date: "25th November 2026",
-    day: "Insha Allah On Wednesday",
-    time: "After Namaz-e-Maghrib (at 7.00 p.m.)",
+    day: "Wednesday",
+    time: "07:00 PM",
     timezone: "IST",
   },
 
