@@ -7,39 +7,40 @@
 
 window.INVITATION_CONFIG = {
   site: {
-    title: "Durefishan & Bilal — Nikah Invitation",
-    description: "You are warmly invited to celebrate the Nikah of Durefishan and Bilal Abbas.",
+    title: "Azhar & Saba — Reception Invitation",
+    description:
+      "Mrs. & Mr. Sheikh Sadik (Almari Wale) request the honour of your presence & blessings on the very auspicious occasion of the Reception Ceremony of their Son Azhar Sheikh with Saba Parveen on Wednesday, 25th November 2026 at Madhavanandan Celebration Lawn, Kharbi, Nagpur.",
   },
 
   couple: {
-    brideInitial: "D",
-    groomInitial: "B",
-    bride: {
-      name: "Durefishan Saleem",
-      shortName: "Durefishan",
-      relation: "Daughter of",
-      parents: "Saleem",
-    },
+    groomInitial: "A",
+    brideInitial: "S",
     groom: {
-      name: "Bilal Abbas",
-      shortName: "Bilal",
-      relation: "Son of",
-      parents: "Abbas",
+      name: "Azhar Sheikh",
+      shortName: "Azhar",
+      relation: "S/o. Sheikh Sadik (Almari Wale)",
+      parents: "Auliya Nagar, Bada Tajbag, Nagpur.",
+    },
+    bride: {
+      name: "Saba Parveen",
+      shortName: "Saba",
+      relation: "D/o. Haji Firoz Khan (JK Cooler)",
+      parents: "Bada Tajbag, Nagpur.",
     },
   },
 
   copy: {
     bismillah: "﷽",
-    bismillahTranslation:
-      "",
-    welcomeLine: "We request the honour of your\npresence at the Nikah of",
-    invitation:
-      "",
-    heroClosing:
-      "as they begin their forever in\nfaith and love.",
-    welcomeTitle: "A Blessed Beginning",
+    bismillahTranslation: "In the name of ALLAH,\nthe Most Beneficent & Merciful",
+    hosts: "Mrs. & Mr. Sheikh Sadik (Almari Wale)",
+    welcomeLine:
+      "Request the honour of your presence & blessings\non the very auspicious occasion of the\nReception Ceremony of their Son",
+    coupleConnector: "WITH",
+    invitation: "Insha Allah On Wednesday, 25th November 2026",
+    heroClosing: "After Namaz-e-Maghrib (at 7.00 p.m.)",
+    welcomeTitle: "Reception Ceremony",
     welcomeBody:
-      "With hearts full of gratitude, we warmly invite you to join us as we celebrate this beautiful beginning with the love, prayers, and blessings of our families.",
+      "Mrs. & Mr. Sheikh Sadik (Almari Wale)\nRequest the honour of your presence & blessings\non the very auspicious occasion of the\nReception Ceremony of their Son\n\nAzhar Sheikh with Saba Parveen",
     gifts:
       "Your love, blessings, and presence are the greatest gifts we could ever ask for.",
     closing: "We can’t wait to celebrate with you.",
@@ -50,18 +51,17 @@ window.INVITATION_CONFIG = {
 
   wedding: {
     // Use a valid ISO date with the local UTC offset for an accurate countdown.
-    isoDate: "2026-10-18T19:00:00+05:30",
-    date: "October 18, 2026",
-    day: "Sunday",
-    time: "07:00 PM",
+    isoDate: "2026-11-25T19:00:00+05:30",
+    date: "25th November 2026",
+    day: "Insha Allah On Wednesday",
+    time: "After Namaz-e-Maghrib (at 7.00 p.m.)",
     timezone: "IST",
   },
 
   media: {
     // Replace these two files inside the /media folder.
     introVideo: "./media/intro-placeholder.mp4",
-    introPoster:
-      "./media/intro-placeholder.webp",
+    introPoster: "./media/intro-placeholder.webp",
     music: "./bismillah.mp3",
 
     // Replace gallery URLs with your own hosted files or image URLs.
@@ -86,89 +86,47 @@ window.INVITATION_CONFIG = {
 
   program: [
     {
-      time: "6:30 PM",
-      title: "Guest Arrival",
-      note: "",
+      time: "7:00 PM",
+      title: "Reception Ceremony",
+      note: "Insha Allah On Wednesday, 25th November 2026 · After Namaz-e-Maghrib (at 7.00 p.m.)",
     },
     {
-      time: "07:00 PM",
-      title: "Nikah Ceremony",
-      note: "Solemnisation & duas",
-    },
-    {
-      time: "07:30 PM",
-      title: "Blessings",
-      note: "Family greetings & photographs",
-    },
-    {
-      time: "08:00 PM",
-      title: "Dinner",
-      note: "A feast shared with love",
+      time: "Onwards",
+      title: "Blessings & Dinner",
+      note: "With Best Compliments From : Abdul Azhar, Sheikh Sahid, Sheikh Family, Relatives & Friends",
     },
   ],
 
   venue: {
-    name: "Noor Invites",
+    name: "Madhavanandan Celebration Lawn",
     address:
-      "Lahore, Pakistan",
-    mapUrl: "https://maps.app.goo.gl/9SjDC3RRg9jHZty59",
+      "Kharbi Main Road, Behind Chamat Hall,\nOpp. Satnam Coolers, Kharbi, Nagpur.",
+    mapUrl:
+      "https://www.google.com/maps/search/?api=1&query=Madhavanandan+Celebration+Lawn+Kharbi+Main+Road+Nagpur",
   },
 
-dressCode: {
-  title: "Festive Formal",
-  description:
-    "Traditional or formal attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, suits, and formal dresses are all welcome. We kindly ask guests to avoid overly casual attire and white or ivory.",
-  swatches: [
-    "#7A1F2B",
-    "#234638",
-    "#C49A56",
-    "#7A4968",
-    "#31506B",
-  ],
-},
-
-  preWeddingEvents: [
-    {
-      name: "Mehendi",
-      date: "October 15",
-      time: "4:00 PM",
-      location: "Bride’s Residence",
-      mapLink: "https://maps.app.goo.gl/c4WZJk71NhKc7CDGA",
-    },
-    {
-      name: "Qawwali Evening",
-      date: "October 17",
-      time: "7:00 PM",
-      location: "Groom's Residence",
-      mapLink: "https://maps.app.goo.gl/c4WZJk71NhKc7CDGA",
-    },
-    {
-      name: "Walima",
-      date: "October 19",
-      time: "7:30 PM",
-      location: "Lahore, Pakistan",
-      mapLink: "https://maps.app.goo.gl/VY3FM2kntM26syuJ8",
-    },
-  ],
-
-  rsvp: {
-    deadline: "Kindly respond by September 15, 2026",
-    contact: "For assistance, call +91 98765 43210",
-    fields: {
-      name: "Your full name",
-      email: "Email address",
-      attendance: ["Joyfully accepts", "Regretfully declines"],
-      guests: ["1 guest", "2 guests", "3 guests", "4 guests"],
-      note: "Dietary notes or a message for the couple",
-    },
+  dressCode: {
+    title: "Festive Formal",
+    description:
+      "Traditional or formal attire is encouraged. Sarees, lehengas, anarkalis, sherwanis, kurtas, suits, and formal dresses are all welcome. We kindly ask guests to avoid overly casual attire and white or ivory.",
+    swatches: ["#7A1F2B", "#234638", "#C49A56", "#7A4968", "#31506B"],
   },
 
-theme: {
-  ivory: "#F7EFE2",       /* warm bridal ivory */
-  plum: "#5A4035",        /* deep warm cocoa */
-  lavender: "#D8B7A6",    /* muted blush nude */
-  mauve: "#B97D6D",       /* dusty rose */
-  lilac: "#A8A28A",       /* soft sage taupe */
-  champagne: "#B88A45",   /* antique gold */
-},
+  compliments: {
+    heading: "With Best Compliments From :",
+    lines: [
+      "Abdul Azhar, Sheikh Sahid,",
+      "Sheikh Family",
+      "Relatives & Friends",
+    ],
+  },
+
+  theme: {
+    ivory: "#F7EFE2",       /* warm bridal ivory */
+    plum: "#5A4035",        /* deep warm cocoa */
+    lavender: "#D8B7A6",    /* muted blush nude */
+    mauve: "#B97D6D",       /* dusty rose */
+    lilac: "#A8A28A",       /* soft sage taupe */
+    champagne: "#B88A45",   /* antique gold */
+  },
 };

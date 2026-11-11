@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Durefishan & Bilal — Nikah Invitation</title>
-<meta content="You are warmly invited to celebrate the Nikah of Durefishan and Bilal Abbas." name="description"/>
-<meta content="Durefishan & Bilal — Nikah Invitation" property="og:title"/>
-<meta content="You are warmly invited to celebrate the Nikah of Durefishan and Bilal Abbas." property="og:description"/>
+<title>Azhar &amp; Saba — Reception Invitation</title>
+<meta content="Mrs. &amp; Mr. Sheikh Sadik (Almari Wale) request the honour of your presence &amp; blessings on the very auspicious occasion of the Reception Ceremony of their Son Azhar Sheikh with Saba Parveen on Wednesday, 25th November 2026 at Madhavanandan Celebration Lawn, Kharbi, Nagpur." name="description"/>
+<meta content="Azhar &amp; Saba — Reception Invitation" property="og:title"/>
+<meta content="Mrs. &amp; Mr. Sheikh Sadik (Almari Wale) request the honour of your presence &amp; blessings on the very auspicious occasion of the Reception Ceremony of their Son Azhar Sheikh with Saba Parveen on Wednesday, 25th November 2026 at Madhavanandan Celebration Lawn, Kharbi, Nagpur." property="og:description"/>
 <meta content="website" property="og:type"/>
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="assets/css/styles.css" rel="stylesheet"/>
@@ -35,19 +35,20 @@
 <div class="hero-content">
 <p class="bismillah" data-bind="copy.bismillah" lang="ar"></p>
 <p class="translation" data-bind="copy.bismillahTranslation"></p>
-<div class="hero-divider"><span>â¦</span></div>
+<div class="hero-divider"><span>✦</span></div>
+<p class="hero-hosts" data-bind="copy.hosts"></p>
 <p class="hero-welcome" data-bind="copy.welcomeLine"></p>
 <div class="couple-names">
 <div>
-<h1 id="brideName"></h1>
-<p data-bind="couple.bride.relation"></p>
-<small data-bind="couple.bride.parents"></small>
-</div>
-<span class="name-ampersand">&amp;</span>
-<div>
 <h1 id="groomName"></h1>
-<p data-bind="couple.groom.relation"></p>
+<small class="person-relation" data-bind="couple.groom.relation"></small>
 <small data-bind="couple.groom.parents"></small>
+</div>
+<span class="name-ampersand" data-bind="copy.coupleConnector"></span>
+<div>
+<h1 id="brideName"></h1>
+<small class="person-relation" data-bind="couple.bride.relation"></small>
+<small data-bind="couple.bride.parents"></small>
 </div>
 </div>
 <p class="hero-invitation" data-bind="copy.invitation"></p>
@@ -83,20 +84,20 @@
 <span aria-hidden="true" class="ornament"><i></i></span>
 </header>
 <div class="scratch-frame-shell reveal">
-<img alt="" aria-hidden="true" class="scratch-frame-overlay" src="assets/images/scratch-frame.webp">
+<img alt="" aria-hidden="true" class="scratch-frame-overlay" src="assets/images/scratch-frame.webp"/>
 <div class="scratch-wrap" id="scratchCard">
 <div aria-live="polite" class="date-reveal">
-<span class="date-kicker">Youâre Invited!</span>
+<span class="date-kicker">Reception</span>
 <strong class="date-main" data-bind="wedding.date"></strong>
 <div class="date-day">
 <span data-bind="wedding.day"></span>
-<a aria-hidden="true">â¬©</a>
+<a aria-hidden="true">⬩</a>
 <span data-bind="wedding.time"></span>
 </div>
 </div>
 <canvas aria-label="Scratch to reveal the wedding date. Press Enter to reveal." class="scratch-canvas" id="scratchCanvas" role="button" tabindex="0"></canvas>
 </div>
-</img></div>
+</div>
 <p class="scratch-note reveal" id="scratchNote">
             Use your finger or cursor to uncover the moment.
           </p>
@@ -128,7 +129,7 @@
 <section class="countdown-section section-pad">
 <div class="section-shell countdown-shell">
 <header class="section-heading reveal">
-<span class="eyebrow">Until we say Qubool Hai</span>
+<span class="eyebrow">Until the Reception</span>
 <h2>Counting every heartbeat</h2>
 <span aria-hidden="true" class="ornament"><i></i></span>
 </header>
@@ -148,7 +149,7 @@
 <div class="section-shell program-shell">
 <header class="section-heading reveal">
 <span class="eyebrow">The celebration</span>
-<h2>Our Nikah day</h2>
+<h2>Reception Ceremony</h2>
 <span aria-hidden="true" class="ornament"><i></i></span>
 </header>
 <div class="timeline reveal" id="programTimeline"></div>
@@ -161,9 +162,9 @@
 <section class="venue-section section-pad">
 <div class="section-shell">
 <div class="venue-card reveal">
-<span class="eyebrow">The venue</span>
+<span class="eyebrow">: Venue :</span>
 <div aria-hidden="true" class="venue-divider">
-<span>â¦</span>
+<span>✦</span>
 </div>
 <h2 data-bind="venue.name"></h2>
 <p data-bind="venue.address"></p>
@@ -190,15 +191,15 @@
 <div aria-hidden="true" class="floral-divider">
 <img alt="" src="assets/images/floral-divider.webp"/>
 </div>
-<!-- Pre-wedding events -->
+<!-- Best compliments -->
 <section class="events-section section-pad">
 <div class="section-shell">
 <header class="section-heading reveal">
-<span class="eyebrow">The Festivities</span>
-<h2>Days filled with joy</h2>
+<span class="eyebrow">With warm regards</span>
+<h2 data-bind="compliments.heading"></h2>
 <span aria-hidden="true" class="ornament"><i></i></span>
 </header>
-<div class="event-list reveal" id="preWeddingEvents"></div>
+<div class="compliments-card reveal" id="complimentsList"></div>
 </div>
 </section>
 <div aria-hidden="true" class="floral-divider">
@@ -239,8 +240,5 @@ Designed by <span>@noor.invites.nagpur</span>
 </footer>
 </main>
 <!-- NAQSH PREVIEW CTA -->
-
-
-
 </body>
 </html>

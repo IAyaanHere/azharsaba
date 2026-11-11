@@ -50,15 +50,15 @@ document.addEventListener("dragstart", (event) => {
   }
 
   function setCoupleNames(element) {
-    const brideName = config.couple.bride.shortName || config.couple.bride.name.split(" ")[0];
     const groomName = config.couple.groom.shortName || config.couple.groom.name.split(" ")[0];
+    const brideName = config.couple.bride.shortName || config.couple.bride.name.split(" ")[0];
     
     element.replaceChildren(
-      document.createTextNode(brideName),
+      document.createTextNode(groomName),
       document.createTextNode(" "),
       createElement("span", "", "&"),
       document.createTextNode(" "),
-      document.createTextNode(groomName)
+      document.createTextNode(brideName)
     );
   }
 
@@ -104,6 +104,7 @@ Object.entries(config.theme).forEach(([name, value]) => {
     video.load();
 
     renderProgram();
+    renderCompliments();
     renderPreWeddingEvents();
     renderDressPalette();
     renderGallery();
@@ -132,8 +133,19 @@ Object.entries(config.theme).forEach(([name, value]) => {
     });
   }
 
+function renderCompliments() {
+  const container = select("#complimentsList");
+  if (!container || !config.compliments?.lines?.length) return;
+
+  config.compliments.lines.forEach((line, index) => {
+    const tag = index === 1 ? "h3" : "p";
+    container.append(createElement(tag, "", line));
+  });
+}
+
 function renderPreWeddingEvents() {
   const eventList = select("#preWeddingEvents");
+  if (!eventList || !config.preWeddingEvents?.length) return;
 
   config.preWeddingEvents.forEach((event) => {
     const article = createElement("article");
