@@ -31,7 +31,7 @@ window.INVITATION_CONFIG = {
 
   copy: {
     bismillah: "﷽",
-    bismillahTranslation: "In the name of ALLAH,\nthe Most Beneficent & Merciful",
+    bismillahTranslation: "",
     hosts: "Mrs. & Mr. Sheikh Sadik (Almari Wale)",
     welcomeLine:
       "Request the honour of your presence & blessings\non the very auspicious occasion of the\nReception Ceremony of their Son",
